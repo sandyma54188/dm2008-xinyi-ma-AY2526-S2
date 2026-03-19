@@ -1,0 +1,49 @@
+// DDM2008
+// Activity 1a
+
+// Run the sketch, then click on the preview to enable keyboard
+// Use the 'Option' ('Alt' on Windows) key to view or hide the grid
+// Use the 'Shift' key to change overlays between black & white
+// Write the code for your creature in the space provided
+
+function setup() {
+  createCanvas(400, 400);
+}
+
+function draw() {
+  background(240);
+
+  // 身体
+  fill(0);
+  rect(150, 180, 100, 80);
+
+  // 头
+  rect(130, 140, 60, 50);
+
+  // 耳朵
+  triangle(130, 140, 150, 120, 170, 140);
+  triangle(170, 140, 190, 120, 210, 140);
+
+  // 眼睛
+  fill(255);
+  ellipse(145, 160, 10, 10);
+
+  // 嘴巴（锯齿）
+  stroke(255);
+  line(135, 170, 145, 165);
+  line(145, 165, 155, 170);
+  line(155, 170, 165, 165);
+
+  noStroke();
+  
+  // 腿
+  fill(0);
+  rect(160, 260, 20, 40);
+  rect(210, 260, 20, 40);
+
+  // 尾巴
+  rect(250, 200, 30, 20);
+
+  
+  helperGrid(); // do not edit or remove this line
+}
